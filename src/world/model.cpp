@@ -28,7 +28,6 @@ namespace cg::world {
         }
         allocate_buffers(reader.GetShapes());
         fill_buffers(reader.GetShapes(), reader.GetAttrib(), reader.GetMaterials(), model_path.parent_path());
-        // TODO Lab: 1.03 Using `tinyobjloader` implement `load_obj`, `allocate_buffers`, `compute_normal`, `fill_vertex_data`, `fill_buffers`, `get_vertex_buffers`, `get_index_buffers` methods of `cg::world::model` class
     }
 
     void model::allocate_buffers(const std::vector<tinyobj::shape_t> &shapes) {
