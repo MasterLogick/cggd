@@ -14,7 +14,7 @@ bool window::pressed_s = false;
 int cg::utils::window::run(cg::renderer::renderer* renderer, HINSTANCE hinstance, int ncmdshow)
 {
 	// Initialize the window class.
-	WNDCLASSEX window_class = {};
+	WNDCLASSEX window_class{};
 	window_class.cbSize = sizeof(WNDCLASSEX);
 	window_class.style = CS_HREDRAW | CS_VREDRAW;
 	window_class.lpfnWndProc = window_proc;
